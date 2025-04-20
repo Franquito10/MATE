@@ -27,7 +27,7 @@
       
           <nav class="nav-links" id="nav-menu">
             <a href="#">MATE.BIKE</a>
-            <a href="#">MATE X</a>
+            <a href="/mate-x.html">MATE X</a>
             <a href="#">PRUEBA UNA MATE</a>
           </nav>
       
@@ -45,10 +45,31 @@
   <section class="hero" id="hero">
     <div class="hero-gallery">
       <!-- PRIMAVERA -->
-            <div class="hero-slide">
-              <div class="hero-image" style="background-image: url('/images/webp/bosqueVelocidad.webp');"></div>
-              <div class="hero-image hero-image-mobile" style="background-image: url('/images/verticales/palapas.jpg');"></div>
-              <div class="hero-text-float">
+              <div class="hero-slide">
+                <!-- Imagen desktop optimizada con LazySizes + bgset -->
+                <div class="hero-image background-size-cover lazyload"
+                      data-bgset="/images/webp/bosqueVelocidad-1920.webp 1920w, 
+                                  /images/webp/bosqueVelocidad-2560.webp 2560w,
+                                  /images/webp/bosqueVelocidad-3840.webp 3840w,
+                                  /images/webp/bosqueVelocidad-5120.webp 5120w"
+                      data-sizes="auto"
+                      role="img"
+                      aria-label="Primavera sin límites"
+                      style="height: 100vh; width: 100vw;">
+                </div>
+                    <div class="hero-image hero-image-mobile background-size-cover lazyload"
+                    data-bgset="/images/verticales/palapas-360.jpg 360w,
+                                /images/verticales/palapas-720.jpg 720w,
+                                /images/verticales/palapas-1080.jpg 1080w,
+                                /images/verticales/palapas-1440.jpg 1440w,
+                                /images/verticales/palapas.jpg 2160w"
+                    data-sizes="auto"
+                    role="img"
+                    aria-label="Primavera sin límites mobile">
+              </div>
+              
+
+                <div class="hero-text-float">
                   <h1 class="hero-title">Primavera sin límites</h1>
                   <p class="hero-subtitle">Respirá libertad, sentí la ciudad.</p>
                   <div class="hero-buttons">
@@ -57,11 +78,34 @@
                   </div>
                 </div>
               </div>
-
+              
+                  
     <!-- INVIERNO -->
+
               <div class="hero-slide">
-                <div class="hero-image" style="background-image: url('/images/webp/nieve.webp');"></div>
-                <div class="hero-image hero-image-mobile" style="background-image: url('/images/verticales/chico-gorra.jpg');"></div>
+                <!-- Desktop -->
+                <div class="hero-image background-size-cover lazyload"
+                    data-bgset="/images/webp/nieve-1920.webp 1920w,
+                                /images/webp/nieve-2560.webp 2560w,
+                                /images/webp/nieve-3840.webp 3840w"
+                    data-sizes="auto"
+                    role="img"
+                    aria-label="Invierno en movimiento"
+                    style="height: 100vh; width: 100vw;">
+                </div>
+
+                <!-- Mobile -->
+                <div class="hero-image hero-image-mobile background-size-cover lazyload"
+                    data-bgset="/images/verticales/chico-gorra-360.jpg 360w,
+                                /images/verticales/chico-gorra-720.jpg 720w,
+                                /images/verticales/chico-gorra-1080.jpg 1080w,
+                                /images/verticales/chico-gorra-1440.jpg 1440w,
+                                /images/verticales/chico-gorra.jpg 2160w"
+                    data-sizes="auto"
+                    role="img"
+                    aria-label="Invierno en movimiento mobile">
+                </div>
+
                 <div class="hero-text-float">
                   <h1 class="hero-title">Invierno en movimiento</h1>
                   <p class="hero-subtitle">La nieve no detiene tu viaje.</p>
@@ -71,38 +115,85 @@
                   </div>
                 </div>
               </div>
+
   
     <!-- VERANO -->
-              <div class="hero-slide">
-                <div class="hero-image" style="background-image: url('/images/webp/verdeyrojo.webp');"></div>
-                <div class="hero-image hero-image-mobile" style="background-image: url('/images/verticales/campo.jpg');"></div>
-                <div class="hero-text-float">
-                  <h1 class="hero-title">Verano urbano</h1>
-                  <p class="hero-subtitle">Elegancia y frescura en cada pedaleada.</p>
-                  <div class="hero-buttons">
-                    <a href="#modelos" class="btn btn-filled"><span>Ver modelo</span></a>
-                    <a href="#test-ride" class="btn btn-outline-light"><span>Probar ahora</span></a>
-                  </div>
-                </div>
-              </div>
+                          <div class="hero-slide">
+                            <!-- Desktop -->
+                            <div class="hero-image background-size-cover lazyload"
+                              data-bgset="/images/webp/verdeyrojo-1920.webp 1920w,
+                                          /images/webp/verdeyrojo-2560.webp 2560w,
+                                          /images/webp/verdeyrojo-3840.webp 3840w,
+                                          /images/webp/verdeyrojo-5120.webp 3840w"
+                              data-sizes="auto"
+                              role="img"
+                              aria-label="Verano urbano">
+                            </div>
+
+                            <!-- Mobile -->
+                            <div class="hero-image hero-image-mobile background-size-cover lazyload"
+                              data-bgset="/images/verticales/campo-360.jpg 360w,
+                                          /images/verticales/campo-720.jpg 720w,
+                                          /images/verticales/campo-1080.jpg 1080w,
+                                          /images/verticales/campo-1440.jpg 1440w,
+                                          /images/verticales/campo.jpg 2160w"
+                              data-sizes="auto"
+                              role="img"
+                              aria-label="Verano urbano mobile">
+                            </div>
+
+                            <div class="hero-text-float">
+                              <h1 class="hero-title">Verano urbano</h1>
+                              <p class="hero-subtitle">Elegancia y frescura en cada pedaleada.</p>
+                              <div class="hero-buttons">
+                                <a href="#modelos" class="btn btn-filled"><span>Ver modelo</span></a>
+                                <a href="#test-ride" class="btn btn-outline-light"><span>Probar ahora</span></a>
+                              </div>
+                            </div>
+                          </div>
+
 
           <!-- OTOÑO -->
-                <div class="hero-slide">
-                  <div class="hero-image" style="background-image: url('/images/webp/DUSTY_ARMY_MATE_X_1307.webp');"></div>
-                  <div class="hero-image hero-image-mobile" style="background-image: url('/images/verticales/verde.jpg');"></div>
-                  <div class="hero-text-float">
-                    <h1 class="hero-title">Otoño de aventura</h1>
-                    <p class="hero-subtitle">Colores cálidos, recorridos épicos.</p>
-                    <div class="hero-buttons">
-                      <a href="#modelos" class="btn btn-filled"><span>Ver modelo</span></a>
-                      <a href="#test-ride" class="btn btn-outline-light"><span>Probar ahora</span></a>
-                    </div>
-                  </div>
-                </div>
+                <!-- OTOÑO -->
+                      <div class="hero-slide">
+                        <!-- Desktop -->
+                        <div class="hero-image background-size-cover lazyload"
+                          data-bgset="/images/webp/DUSTY_ARMY_MATE_X_1307-1920.webp 1920w,
+                                      /images/webp/DUSTY_ARMY_MATE_X_1307-2560.webp 2560w,
+                                      /images/webp/DUSTY_ARMY_MATE_X_1307-3840.webp 3840w,
+                                      /images/webp/DUSTY_ARMY_MATE_X_1307-5120.webp 3840w"
+                          data-sizes="auto"
+                          role="img"
+                          aria-label="Otoño de aventura">
+                        </div>
+
+                        <!-- Mobile -->
+                        <div class="hero-image hero-image-mobile background-size-cover lazyload"
+                          data-bgset="/images/verticales/verde-360.jpg 360w,
+                                      /images/verticales/verde-720.jpg 720w,
+                                      /images/verticales/verde-1080.jpg 1080w,
+                                      /images/verticales/verde-1440.jpg 1440w,
+                                      /images/verticales/verde.jpg 2160w"
+                          data-sizes="auto"
+                          role="img"
+                          aria-label="Otoño de aventura mobile">
+                        </div>
+
+                        <div class="hero-text-float">
+                          <h1 class="hero-title">Otoño de aventura</h1>
+                          <p class="hero-subtitle">Colores cálidos, recorridos épicos.</p>
+                          <div class="hero-buttons">
+                            <a href="#modelos" class="btn btn-filled"><span>Ver modelo</span></a>
+                            <a href="#test-ride" class="btn btn-outline-light"><span>Probar ahora</span></a>
+                          </div>
+                        </div>
+                      </div>
+
                 <!-- Flechas Hero -->             
       </div>
-      <button class="hero-prev"><i class="fas fa-chevron-left"></i></button>
-      <button class="hero-next"><i class="fas fa-chevron-right"></i></button>   
+      <button class="hero-arrow hero-arrow-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="hero-arrow hero-arrow-next"><i class="fas fa-chevron-right"></i></button>      
+          
   </section>
 
 
@@ -673,5 +764,27 @@
     <script src="js/carousel3d.js"></script>
     <script src="js/gsap-animations.js"></script>
     <script src="/js/btn-animation.js"></script>
+<!-- LazySizes core (primero, sin async) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"></script>
+
+<!-- Plugin bgset (después, sin async también) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/plugins/bgset/ls.bgset.min.js"></script>
+  
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.querySelector(".carousel3d");
+      
+        function checkVisibility() {
+          const rect = carousel.getBoundingClientRect();
+          const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+          carousel.classList.toggle("is-visible", isVisible);
+        }
+      
+        window.addEventListener("scroll", checkVisibility);
+        window.addEventListener("resize", checkVisibility);
+        checkVisibility();
+      });
+      </script>      
 </body>
 </html>
