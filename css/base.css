@@ -1,0 +1,58 @@
+/* Tipografías y Reset */
+@font-face {
+    font-family: 'Gibson';
+    src: url('/MATE/fonts/Gibson-Regular.otf') format('opentype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Gibson';
+    src: url('/MATE/fonts/Gibson-Bold.otf') format('opentype');
+    font-weight: bold;
+  }
+  
+  :root {
+    --primary-color: #2c3e50;
+    --accent-color: #27ae60;
+    --light-bg: #f8f9fa;
+    --dark-bg: #1a1a1a;
+    --text-color: #333;
+    --light-text: #f8f9fa;
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    scroll-behavior: smooth;
+    font-family: 'Gibson', sans-serif,'Inter';
+    color: var(--text-color);
+    background-color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-top: 100px; /* para que el navbar fijo no tape el contenido */
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Gibson', sans-serif;
+    color: #111;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+
+  

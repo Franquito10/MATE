@@ -1,0 +1,122 @@
+/* HEADER NAVBAR */
+/* NAVBAR RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #115CFA;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* LOGO A LA IZQUIERDA */
+.logo {
+  margin-right: auto;
+}
+.logo img {
+  height: 40px;
+}
+
+/* MENÚ CENTRADO */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-grow: 1;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #111;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+
+/* ÍCONOS DERECHA */
+.nav-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+.nav-icons a {
+  font-size: 1.2rem;
+  color: #333;
+  transition: var(--transition);
+}
+.nav-icons a:hover {
+  color: var(--accent-color);
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: #111;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 960px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 2rem 1rem;
+    z-index: 998;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto
+  }
+}
